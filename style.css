@@ -108,6 +108,20 @@ body{
 .agenda li.spc .event{font-weight:600;color:var(--navy);}
 .agenda li.spc{background:rgba(31,122,140,.06);}
 
+/* Venue & logistics */
+.logistics{margin:0;max-width:840px;}
+.logi{
+  display:grid;grid-template-columns:180px 1fr;gap:0 28px;
+  padding:18px 0;border-top:1px solid var(--line);
+}
+.logi:first-child{border-top:none;padding-top:4px;}
+.logi dt{
+  font-size:.82rem;font-weight:600;text-transform:uppercase;letter-spacing:.08em;
+  color:var(--teal);padding-top:3px;
+}
+.logi dd{margin:0;color:var(--ink);}
+.logi-lead{display:block;font-weight:600;color:var(--navy);}
+
 /* People lists */
 .people{list-style:none;margin:0;padding:0;}
 .people li{display:flex;flex-direction:column;}
@@ -137,6 +151,7 @@ body{
   .site-nav{display:none;}
   .topics{grid-template-columns:1fr;}
   .people-grid,.people-org{grid-template-columns:1fr;}
+  .logi{grid-template-columns:1fr;gap:6px;}
   .footer-inner{flex-direction:column;align-items:flex-start;}
   .footer-credit{text-align:left;}
   .hero{padding:54px 0 44px;}
